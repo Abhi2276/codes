@@ -1,0 +1,22 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner kb=new Scanner(System.in);
+		String s=kb.nextLine();
+		char arr[]=s.toCharArray();
+		HashSet<Character>value=new HashSet<Character>();
+		for(int i=0;i<arr.length;i++)
+		{
+		    value.add(arr[i]);
+		    
+		}
+		System.out.print(value);
+		 for(Character ch : value) 
+		 {
+            System.out.print(ch);
+		 }
+		 
+	
+}
+}

@@ -1,0 +1,34 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner kb=new Scanner(System.in);
+		int n=kb.nextInt();
+		int arr[]=new int[n];
+		int brr[]=new int[n];
+		for(int i=0;i<n;i++)
+		{
+		    arr[i]=kb.nextInt();
+		}
+		for(int j=0;j<n;j++)
+		{
+		    brr[j]=kb.nextInt();
+		}
+		
+		HashSet<Integer> value= new HashSet<>();
+		
+		    for(int i=0;i<n;i++)
+		    {
+		        value.add(arr[i]);
+		    }
+		    for(int j=0;j<n;j++)
+		    {
+		        value.add(brr[j]);
+		    }
+		System.out.print(value.toString()+" ");
+		for(int no:value)
+		{
+		    System.out.println(no+" ");
+		}
+	}
+}
